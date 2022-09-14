@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/AustinGreenCode/mernSPAproject#readme",
   "dependencies": {
-    "apollo-server": "^3.10.2"
+    "apollo-server": "^3.10.2",
+    "concurrently": "^7.4.0"
   }
 }

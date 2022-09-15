@@ -1,0 +1,24 @@
+{
+  "name": "project3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AustinGreenCode/mernSPAproject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AustinGreenCode/mernSPAproject/issues"
+  },
+  "homepage": "https://github.com/AustinGreenCode/mernSPAproject#readme",
+  "dependencies": {
+    "apollo-server": "^3.10.2",
+    "concurrently": "^7.4.0"
+  }
+}

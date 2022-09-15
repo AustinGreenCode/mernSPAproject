@@ -53,6 +53,7 @@ header a {
 .logo-one {
     line-height: 0.80;
     letter-spacing: -0.1em;
+    text-align: right;
 }
 
 .logo-two {

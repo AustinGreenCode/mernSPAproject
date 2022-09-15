@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width", initial-scale="1.0" />
+
+    <!-- linking bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+    crossorigin="anonymous" />
+
+    <!-- linking fonts -->
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+
+    <!-- linking stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- linking media queries -->
+    <link rel="stylesheet" href="./assets/css/mediaqueries.css" />
+    <title>Breweries & Friends</title>
+  </head>
+
+  <body>
+
+    <!-- navigation -->
+    <header>
+        <h1>
+            <a href="./index.html">
+                <div class="logo-one">BREWERIES</div>
+                <div class="logo-two">&FRIENDS</div>
+            </a>
+        </h1>
+    </header>
+  
+    <!-- hero/jumbotron -->
+    <section class="hero">
+        <div class="hero-cta">
+            <h2>Brewery adventure with friends</h2></br>
+            <p>
+                We all enjoy meeting up with friends, relaxing a bit after a busy day, and enjoying some well-deserved downtime over a beer together. So whether you're planning a meetup at a local brewery for happy-hour, a late-afternoon hike before heading to a new brewery, or perhaps a weekend adventure of brewery tours and tasting — we're here to help! Sign up, bring your friends and meet some new friends. 
+            </p>
+            </br>
+            <p>
+                Let's plan your next brewery adventure!
+            </p>
+        </div>
+        <div class="hero-form">
+            <form>
+                <input type="text" placeholder="First Name" name="firstname" id="firstname" class="form-input" />
+                <input type="text" placeholder="Last name" name="lastname" id="lastname" class="form-input" />
+                <input type="email" placeholder="Email" name="email" id="email" class="form-input" />
+                <input type="tel" placeholder="Phone" name="phone" id="phone" class="form-input" />
+                    <span class="checkbox-wrapper">
+                        <input type="checkbox" name="age-confirm" id="checkbox" />
+                        <label for="checkbox">I acknowledge I am at least 18 years of age.</label>
+                    </span>
+                </p>
+                <button type="submit">Submit your information</button>
+            </form>
+        </div>
+    </section>
+  
+    <!-- "our favorite breweries" section -->
+    <section id="what-we-do" class="container intro">
+        <div class="row">
+            <h2 class="section-title primary-border">Some our our favorite breweries!</h2>
+        </div>
+
+        <div class="row breweries col-12">
+
+        <div class="brewery col-sm-5 col-md-3 col-lg-2">
+            <a href="https://www.craftybastardbrewery.com/" target="_blank">
+                <img src="./assets/images/breweries/CraftyBastardHeadstockLogo-black.png" alt="Crafty Bastard Brewery" /></a>
+        </div>
+
+        <div class="brewery col-sm-5 col-md-3 col-lg-2">
+            <a href="https://eastnashbeerworks.com/" target="_blank">
+                <img src="./assets/images/breweries/ENBW_Stacked_Alt_Logo.svg" alt="East Nashville Beer Works" /></a>
+        </div>
+
+        <div class="brewery col-sm-5 col-md-3 col-lg-2">
+            <a href="https://www.newbelgium.com/" target="_blank">
+                <img src="./assets/images/breweries/new-belgium-brewing-logo.jpeg" alt="New Belgiun Brewing" /></a>
+        </div>
+
+        <div class="brewery col-sm-5 col-md-3 col-lg-2">
+            <a href="https://www.nextlevelknox.com/" target="_blank">
+                <img src="./assets/images/breweries/NextLevelBrewing_FullColor_Logo.png" alt="Next Level Brewing" /></a>
+        </div>
+
+        <div class="brewery col-sm-5 col-md-3 col-lg-2">
+            <a href="https://www.tnbrew.com/" target="_blank">
+                <img src="./assets/images/breweries/TNBW-logo.png" alt="Tennessee Brew Works" /></a>
+        </div>
+
+        <div class="brewery col-sm-5 col-md-3 col-lg-2">
+            <a href="https://yeehawbrewing.com/" target="_blank">
+                <img src="./assets/images/breweries/yeehaw-brewing-company.png" alt="Yee Haw Brewing" /></a>
+        </div>
+
+        <div class="brewery col-sm-5 col-md-3 col-lg-2">
+            <a href="https://beardedirisbrewing.com/" target="_blank">
+                <img src="./assets/images/breweries/Bearded-Iris-full-logo-black-web.png" alt="Bearded Iris Brewing" /></a>
+        </div>
+
+        <div class="brewery col-sm-5 col-md-3 col-lg-2">
+            <a href="https://www.southerngristbrewing.com/" target="_blank">
+                <img src="./assets/images/breweries/Southern-Grist_Logo_Primary.png" alt="Southern Grist Brewing" /></a>
+        </div>
+
+        <div class="brewery col-sm-5 col-md-3 col-lg-2">
+            <a href="https://www.wickedweedbrewing.com/" target="_blank">
+                <img src="./assets/images/breweries/wicked-weed-logo.avif" alt="Wicked Weed Brewing" /></a>
+        </div>
+
+        <div class="brewery col-sm-5 col-md-3 col-lg-2">
+            <a href="https://www.booneshine.beer/" target="_blank">
+                <img src="./assets/images/breweries/BooneshineHexAI.png" alt="Booneshine Brewing" /></a>
+        </div>
+
+        </div>
+
+    </section>
+    
+    </body>
+
+    <!-- footer -->
+    <footer>
+        <p>❤️ Made with love by Breweries & Friends.</h2>
+        <div>
+            &copy; 2022 Breweries & Friends LLC
+        </div>
+    </footer>
+
+    <!-- js scripts, jquery, bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" 
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+        crossorigin="anonymous"></script>
+
+
+
+</html>

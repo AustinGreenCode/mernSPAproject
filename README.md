@@ -1,10 +1,10 @@
  ## BeerThoughts
- Simple app to share your thought on beer or brew.
+ A MERN stack application.
 
  ## Description
  SImple and easy to use application that allows you to share your thought on beer, and other things related.
 
- ## Dpendencies
+ ## Dpendencies & Technologies
  React
  GraphQL
  MongoDB
@@ -18,7 +18,8 @@
  Austin Green, Jim Davis, Gordon Orr
 
  ##Links
- 
+ https://github.com/AustinGreenCode/mernSPAproject
+
 
  ##Version
  1.0.0

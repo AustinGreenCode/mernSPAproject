@@ -39,7 +39,7 @@ const ThoughtForm = () => {
         thoughtAuthor: '',
       });
     } catch (err) {
-      console.error(err);
+     // console.error(err);
     }
   };
 
@@ -83,7 +83,7 @@ const ThoughtForm = () => {
         <div className="col-12 col-lg-9">
           <input
             name="thoughtAuthor"
-            placeholder="Add your name to get credit for the thought..."
+            placeholder="Add your name"
             value={formState.thoughtAuthor}
             className="form-input w-100"
             onChange={handleChange}

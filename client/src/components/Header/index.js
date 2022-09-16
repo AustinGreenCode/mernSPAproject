@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <header className="bg-primary text-light mb-4 py-3 flex-row align-center">
+    <header className="bg-secondary text-dark mb-4 py-3 flex-row align-center">
       <div className="container flex-row justify-space-between-lg justify-center align-center">
-        <Link className="text-light" to="/">
+        <Link className="text-dark" to="/">
           <h1 className="m-0">Beer Thoughts</h1>
         </Link>
-        <p className="m-0">What are your thought on your favorite beer.</p>
+        <p className="m-0">What are your thoughts on your favorite beer.</p>
       </div>
     </header>
   );

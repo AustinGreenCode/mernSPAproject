@@ -14,12 +14,12 @@
  ## Where to view our application.
 
 
- #Authors
+ ## Authors
  Austin Green, Jim Davis, Gordon Orr
 
- ##Links
+ ## Links
  https://github.com/AustinGreenCode/mernSPAproject
 
 
- ##Version
+ ## Version
  1.0.0

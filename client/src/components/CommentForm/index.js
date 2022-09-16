@@ -34,7 +34,7 @@ const CommentForm = ({ thoughtId }) => {
 
   return (
     <div>
-      <h4>What are your thoughts on this thought?</h4>
+      <h4>What are your thoughts on this Beer?</h4>
       <p
         className={`m-0 ${
           characterCount === 280 || error ? 'text-danger' : ''

@@ -27,7 +27,7 @@ const ThoughtList = ({ thoughts, title }) => {
               className="btn btn-primary btn-block btn-squared"
               to={`/thoughts/${thought._id}`}
             >
-              Join the discussion on this thought.
+              Join the discussion.
             </Link>
           </div>
         ))}

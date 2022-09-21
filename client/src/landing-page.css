@@ -1,0 +1,615 @@
+/* define variables for use with any html element */
+:root { /* targets the top-most parent element (likely <html> element */
+    --primary-color: #ffffff;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
+    --logo-color: black;
+}
+
+/* remove default browser-enforced styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* apply styles to body */
+body {
+    color: var(tertiary-color);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* apply styles to header */
+header {
+    background-image: url("../public/brewery-images/brewery-friends-50%-opacity.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    padding: 20px 35px;
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky; /* safari support */
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 35px;
+    margin: 0;
+    text-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    width: 100px;
+}
+
+.logo-one {
+    line-height: 0.80;
+    letter-spacing: -0.1em;
+    text-align: right;
+}
+
+.logo-two {
+    line-height: 0.80;
+    letter-spacing: -0.1em;
+    text-align: right;
+}
+
+/* apply styles to footer */
+footer {
+    background: var(--primary-color);
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer h2 {
+    color: var(--secondary-color);
+    font-size: 30px;
+    margin: 0;
+}
+
+footer div {
+    line-height: 1.5;
+    text-align: right;
+}
+
+footer a {
+    color: var(--secondary-color);
+}
+
+/* apply styles to sections */
+section {
+    padding: 60px;
+}
+
+/* apply styles to hero */
+.hero {
+    background-image: url("../public/brewery-images/brewery-friends-50%-opacity.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.hero-cta {
+    width: 85%;
+    text-align: center;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.hero-cta h2 {
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 55px;
+    color: var(--primary-color);
+    text-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
+}
+
+.hero-cta p {
+    font-style: thin;
+    font-size: 25px;
+    color: var(--primary-color);
+    text-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
+    line-height: 1.3;
+
+}
+
+.hero-form {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    color: var(--secondary-color);
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: var(--secondary-color);
+    width: 40%;
+    margin: 3.5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.hero-form h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.hero-form p {
+    margin: 5px 0 15px 0;
+}
+
+.hero-form label {
+    margin: 0 5px;
+}
+
+.hero-form button {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.hero-form button:hover {
+    background-color: var(--tertiary-color);
+}
+
+.form-input {
+    border: 0.5px solid var(--secondary-color);
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: var(--secondary-color);
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.form-input:focus {
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;
+}
+
+.checkbox-wrapper input, .radio-wrapper input {
+    opacity: 0;
+}
+
+.checkbox-wrapper label, .radio-wrapper label {
+    position: relative;
+    left: 10px;
+    margin: 10px;
+    line-height: 1.6;
+}
+
+.checkbox-wrapper label::before, .radio-wrapper label::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    background: rgba(255, 255, 255, 0.75);
+    border: 0.5px solid var(--secondary-color);
+    position: absolute;
+    top: -4px;
+    left: -30px;
+}
+
+.radio-wrapper label::before {
+    border-radius: 50%;
+}
+
+.radio-wrapper label::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+    position: absolute;
+    left: -29px;
+    top: -3px;
+    background-image: radial-gradient(circle, var(--tertiary-color), var(--secondary-color));
+}
+
+.checkbox-wrapper label::after {
+    content: "";
+    height: 6px;
+    width: 14px;
+    border-left: 2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    position: absolute;
+    left: -26px;
+    top: 1px;
+    transform: rotate(-58deg);
+}
+
+.checkbox-wrapper input + label::after, 
+.radio-wrapper input + label::after {
+    content: none;
+}
+
+.checkbox-wrapper input:checked + label::after,
+.radio-wrapper input:checked + label::after {
+    content: "";
+}
+
+/* apply styles to What We Do Section */
+.section-title {
+    font-size: 40px;
+    color: var(--secondary-color);
+    border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 75%
+}
+
+.primary-border {
+    border-color: var(--primary-color);
+}
+
+.secondary-border {
+    border-color: var(--tertiary-color);
+}
+
+.intro p {
+    line-height: 1.7;
+    color: var(--tertiary-color);
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* apply styles to Meet the Breweries Section */
+.breweries {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.brewery {
+    margin: 20px;
+}
+
+.brewery img {
+    width: 100%;
+}
+
+
+/* utility classes */
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+.flex-row {
+    display: flex;
+}/* define variables for use with any html element */
+:root { /* targets the top-most parent element (likely <html> element */
+    --primary-color: #ffffff;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
+    --logo-color: black;
+}
+
+/* remove default browser-enforced styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* apply styles to body */
+body {
+    color: var(tertiary-color);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* apply styles to header */
+header {
+    background-image: url("../images/brewery-friends-50%-opacity.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    padding: 20px 35px;
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky; /* safari support */
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 35px;
+    margin: 0;
+    text-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    width: 100px;
+}
+
+.logo-one {
+    line-height: 0.80;
+    letter-spacing: -0.1em;
+    text-align: right;
+}
+
+.logo-two {
+    line-height: 0.80;
+    letter-spacing: -0.1em;
+    text-align: right;
+}
+
+/* apply styles to footer */
+footer {
+    background: var(--primary-color);
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer h2 {
+    color: var(--secondary-color);
+    font-size: 30px;
+    margin: 0;
+}
+
+footer div {
+    line-height: 1.5;
+    text-align: right;
+}
+
+footer a {
+    color: var(--secondary-color);
+}
+
+/* apply styles to sections */
+section {
+    padding: 60px;
+}
+
+/* apply styles to hero */
+.hero {
+    background-image: url("../images/brewery-friends-50%-opacity.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.hero-cta {
+    width: 85%;
+    text-align: center;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.hero-cta h2 {
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 55px;
+    color: var(--primary-color);
+    text-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
+}
+
+.hero-cta p {
+    font-style: thin;
+    font-size: 25px;
+    color: var(--primary-color);
+    text-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
+    line-height: 1.3;
+
+}
+
+.hero-form {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    color: var(--secondary-color);
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: var(--secondary-color);
+    width: 40%;
+    margin: 3.5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.hero-form h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.hero-form p {
+    margin: 5px 0 15px 0;
+}
+
+.hero-form label {
+    margin: 0 5px;
+}
+
+.hero-form button {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.hero-form button:hover {
+    background-color: var(--tertiary-color);
+}
+
+.form-input {
+    border: 0.5px solid var(--secondary-color);
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: var(--secondary-color);
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.form-input:focus {
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;
+}
+
+.checkbox-wrapper input, .radio-wrapper input {
+    opacity: 0;
+}
+
+.checkbox-wrapper label, .radio-wrapper label {
+    position: relative;
+    left: 10px;
+    margin: 10px;
+    line-height: 1.6;
+}
+
+.checkbox-wrapper label::before, .radio-wrapper label::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    background: rgba(255, 255, 255, 0.75);
+    border: 0.5px solid var(--secondary-color);
+    position: absolute;
+    top: -4px;
+    left: -30px;
+}
+
+.radio-wrapper label::before {
+    border-radius: 50%;
+}
+
+.radio-wrapper label::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+    position: absolute;
+    left: -29px;
+    top: -3px;
+    background-image: radial-gradient(circle, var(--tertiary-color), var(--secondary-color));
+}
+
+.checkbox-wrapper label::after {
+    content: "";
+    height: 6px;
+    width: 14px;
+    border-left: 2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    position: absolute;
+    left: -26px;
+    top: 1px;
+    transform: rotate(-58deg);
+}
+
+.checkbox-wrapper input + label::after, 
+.radio-wrapper input + label::after {
+    content: none;
+}
+
+.checkbox-wrapper input:checked + label::after,
+.radio-wrapper input:checked + label::after {
+    content: "";
+}
+
+/* apply styles to What We Do Section */
+.section-title {
+    font-size: 40px;
+    color: var(--secondary-color);
+    border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 75%
+}
+
+.primary-border {
+    border-color: var(--primary-color);
+}
+
+.secondary-border {
+    border-color: var(--tertiary-color);
+}
+
+.intro p {
+    line-height: 1.7;
+    color: var(--tertiary-color);
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* apply styles to Meet the Breweries Section */
+.breweries {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.brewery {
+    margin: 20px;
+}
+
+.brewery img {
+    width: 100%;
+}
+
+
+/* utility classes */
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+.flex-row {
+    display: flex;
+}

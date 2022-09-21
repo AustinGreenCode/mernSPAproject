@@ -8,7 +8,7 @@ const Header = () => {
         <Link className="text-dark" to="/">
           <h1 className="m-0">Beer Thoughts</h1>
         </Link>
-        <p className="m-0">What are your thoughts on your favorite beer.</p>
+        <p className="m-0">What are your thoughts on your favorite beer?</p>
       </div>
     </header>
   );

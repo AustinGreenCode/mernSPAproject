@@ -52,14 +52,14 @@ const CommentForm = ({ thoughtId }) => {
             name="commentText"
             placeholder="Add your comment..."
             value={commentText}
-            className="form-input w-100"
+            className="form-input w-100 bg-dark text-white"
             style={{ lineHeight: '1.5' }}
             onChange={handleChange}
           ></textarea>
         </div>
 
         <div className="col-12 col-lg-3">
-          <button className="btn btn-primary btn-block py-3" type="submit">
+          <button className="btn btn-dark text-info btn-block py-3" type="submit">
             Add Comment
           </button>
         </div>

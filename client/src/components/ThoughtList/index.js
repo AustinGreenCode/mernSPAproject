@@ -12,22 +12,22 @@ const ThoughtList = ({ thoughts, title }) => {
       <h3>{title}</h3>
       {thoughts &&
         thoughts.map((thought) => (
-          <div key={thought._id} className="card mb-3">
-            <h4 className="card-header bg-primary text-light p-2 m-0">
+          <div key={thought._id} className="card mb-9">
+            <h4 className="card-header bg-dark text-info p-2 m-0">
               {thought.thoughtAuthor} <br />
               <span style={{ fontSize: '1rem' }}>
                 had this thought on {thought.createdAt}
               </span>
             </h4>
-            <div className="card-body bg-light p-2">
+            <div className="card-body bg-info p-5">
               <p>{thought.thoughtText}</p>
             </div>
-            {/* Create a link to this thought's page to view its comments using `<Link>` component */}
+            
             <Link
-              className="btn btn-primary btn-block btn-squared"
+              className="btn btn-dark text-info btn-block btn-squared"
               to={`/thoughts/${thought._id}`}
             >
-              Join the discussion.
+              Join the discussion on this thought.
             </Link>
           </div>
         ))}

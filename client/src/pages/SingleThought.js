@@ -25,19 +25,19 @@ const SingleThought = () => {
   }
   return (
     <div className="my-3">
-      <h3 className="card-header bg-primary text-light p-2 m-0">
+      <h3 className="card-header bg-info text-dark p-2 m-0">
         {thought.thoughtAuthor} <br />
         <span style={{ fontSize: '1rem' }}>
           had this thought on {thought.createdAt}
         </span>
       </h3>
-      <div className="bg-light py-4">
+      <div className="bg-dark text-info py-4">
         <blockquote
           className="p-4"
           style={{
             fontSize: '1.5rem',
             fontStyle: 'italic',
-            border: '2px dotted #1a1a1a',
+            border: '2px solid #1a1a1a',
             lineHeight: '1.5',
           }}
         >
@@ -48,7 +48,7 @@ const SingleThought = () => {
       <div className="my-5">
         <CommentList comments={thought.comments} />
       </div>
-      <div className="m-3 p-4" style={{ border: '1px dotted #1a1a1a' }}>
+      <div className="m-3 p-4" style={{ border: '1px solid #1a1a1a' }}>
         <CommentForm thoughtId={thought._id} />
       </div>
     </div>

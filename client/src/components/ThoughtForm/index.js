@@ -56,7 +56,7 @@ const ThoughtForm = () => {
 
   return (
     <div>
-      <h3>What's on your mind?</h3>
+      <h3>Tell us about your favorite beer!</h3>
 
       <p
         className={`m-0 ${
@@ -67,15 +67,15 @@ const ThoughtForm = () => {
         {error && <span className="ml-2">Something went wrong...</span>}
       </p>
       <form
-        className="flex-row justify-center justify-space-between-md align-center"
+        className="flex-row justify-center justify-space-between-md align-center bg-info"
         onSubmit={handleFormSubmit}
       >
         <div className="col-12">
           <textarea
             name="thoughtText"
-            placeholder="Here's a new thought..."
+            placeholder="Here's what I think!"
             value={formState.thoughtText}
-            className="form-input w-100"
+            className="form-input w-100 bg-dark text-white"
             style={{ lineHeight: '1.5' }}
             onChange={handleChange}
           ></textarea>
@@ -85,18 +85,18 @@ const ThoughtForm = () => {
             name="thoughtAuthor"
             placeholder="Add your name"
             value={formState.thoughtAuthor}
-            className="form-input w-100"
+            className="form-input w-100 bg-dark text-white"
             onChange={handleChange}
           />
         </div>
 
         <div className="col-12 col-lg-3">
-          <button className="btn btn-primary btn-block py-3" type="submit">
+          <button className="btn btn-dark text-info btn-block py-3" type="submit">
             Add Thought
           </button>
         </div>
         {error && (
-          <div className="col-12 my-3 bg-danger text-white p-3">
+          <div className="col-12 my-3 bg-danger text-info p-3">
             Something went wrong...
           </div>
         )}
